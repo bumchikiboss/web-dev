@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Game</title>
+
+    <link rel="stylesheet" href="MainPageCSS.css">
+    <link rel="stylesheet" href="quizgameCSS.css">
+
+</head>
+<body>
+    <div class="homecentre">
+        <div class="quiz">
+            <div class="quiz-header">
+                <div class="quiz-progress">
+                    <ul class="progress-list">
+                        <li><span>PROGRESS</span></li>
+                        <li><span id="progress"></span></li>
+                    </ul>
+                </div>
+                <div class="quiz-score">
+                    <ul class="score-list">
+                        <li><span>SCORE</span></li>
+                        <li><span id="score"></span></li>
+                    </ul>
+                </div>
+                <div class="quiz-timer">
+                    <span id="time"></span>
+                </div>
+            </div>
+            <div class="quiz-body">
+                <div id="questions">
+                 <!--<h2 class="question">Q1 : What is the capital of India ?</h2>
+                    <ol class="options">
+                        <li class="option">Delhi</li>
+                        <li class="option">Mumbai</li>
+                        <li class="option">Kota</li>
+                        <li class="option">Chennai</li>
+                    </ol>-->
+                </div>
+                <button class="btn-next" onclick="nextques()">Next</button>
+            </div>
+        </div>
+    </div>
+ <script src="quizgame.js"></script>   
+ <script src="timer.js"></script>
+</body>
+</html>

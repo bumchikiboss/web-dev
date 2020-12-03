@@ -1,0 +1,81 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Yanone Kaffeesatz',sans-serif;
+    background-image: url("https://cutewallpaper.org/21/red-and-black-background-1920x1080/Collection-Red-And-Black-Gaming-Background-Pictures-.jpg");
+
+}
+
+.homecentre{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    
+}
+
+.button{
+
+    margin: .5em;
+    padding: .8em .9em;
+    border: 1px transparent ;
+    border-radius: 30px;
+    border: 1px solid rgba(112,111,211,0) ;
+    background-color: transparent;
+    outline:none;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.button:focus{
+    color: lightseagreen;
+    border: 1px solid rgba(112,111,211,1) ;
+    box-shadow: 0px 0px 0px 1px rgb(25, 159, 163);
+    animation: animate-shadow .7s forwards;
+
+}
+.button:hover{
+    transition: transform .5s;
+    transform: scale(1.05);
+}
+@keyframes animate-shadow{
+    100%{
+        box-shadow: 0px 0px 50px 20px rgba(112,111,211,0) ;
+    }
+}
+
+.homecentre h1{
+
+    font-family: 'Major Mono Display';
+    font-size: 50px;
+    color: white;
+
+    background: repeating-linear-gradient(-45deg,red 0%,yellow 7.14%,
+     rgb(0,255,0) 14.28%, rgb(0,255,255) 21.4% , cyan 28.56% , blue 35.7%, magenta 42.84% ,red 50%);
+    background-size: 400vw 400vw;
+
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    animation: animate 5s linear infinite forwards;
+    
+}
+
+@keyframes animate{
+    0%{
+        background-position-x: 0%;
+    }
+    100%{
+        background-position-x: 400vw;
+    }
+}
+
+#click:onclick{
+    transition: 2s;
+}

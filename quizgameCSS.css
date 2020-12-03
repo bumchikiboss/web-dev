@@ -1,0 +1,131 @@
+.quiz {
+
+    width: 700px;
+    height: 550px;
+    display: grid;
+    grid-template-rows: 100px auto;
+    border-radius: 10px;
+}
+
+.quiz-header {
+
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-color: rgb(23, 39, 73);
+    box-shadow: 0px 2px 5px 1px rgba(0,0,0,0.4);
+    z-index: 1;
+}
+.quiz-body {
+    background-color: rgb(197, 197, 177);
+    padding: 30px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.quiz-progress {
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+}
+
+.progress-list{
+    list-style-type: none;
+    text-align: center;
+    font-size: 10px;
+}
+
+#progress{
+  font-size: 18px;
+}
+
+.quiz-score{
+    display: flex;
+    align-items: center;
+  
+
+}
+.score-list{
+      list-style-type: none;
+      text-align: center;
+}
+
+#score{
+    font-size: 60px;
+}
+
+.quiz-timer {
+    display: flex;
+    align-items: center;
+    background-color: rgb(11, 206, 11);
+    color:darkslategrey;
+    padding: 30px 30px;
+    border-top-right-radius: 10px;
+}
+
+.options {
+
+    list-style-type: none;
+    margin: 30px 0;
+}
+
+.option {
+
+    background-color: rgb(43, 43, 177);
+    width: 400px;
+    padding: 15px 30px;
+    margin-bottom: 15px ;
+    border-radius: 10px;
+    border: 2px solid transparent;
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+    transition: 0.3s all;
+}
+
+.option:hover{
+
+    cursor: pointer;
+    border: 2px solid rgb(164, 241, 255);
+    color: black;
+}
+
+.btn-next{
+
+    background-color: rgb(43, 43, 177);
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 20px;
+    font-size: 15px;
+    font-weight: bold;
+    float: right;
+    transition: 0.4s all;
+}
+
+.btn-next:hover{
+
+    cursor: pointer;
+    background-color: white;
+    color:  rgb(43, 43, 177);
+    box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.4);
+}
+
+.btn-next:focus{
+    outline: none;
+}
+
+.selected{
+    background-color: rgb(43, 185, 50);
+    color: white;
+    border: 2px solid black; 
+}
+#time{
+    font-size: 30px;
+    color: black;
+    font-weight: bold;
+}

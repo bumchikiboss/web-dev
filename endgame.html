@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Endpage</title>
+    <link rel="stylesheet" href="MainPageCSS.css">
+    <link rel="stylesheet" href="endgameCSS.css">
+    
+
+</head>
+<body>
+    <div class="homecentre">
+        <div class="result">
+            <ul class="result-list">
+                <li>THANK YOU FOR PLAYING!</li>
+                <li><span class="score"></span></li>
+                <br>
+                <li>Enter your name to save your score !</li>
+                <li class="end">
+                    <li><form class="end-form" name="nameform" >
+                        <input type="text" name="name" id="username" placeholder="    Enter your name"><br>
+                        <button class="end-buttons" id="save" type="submit" onclick="submitName(event)">SAVE</button>
+                    </form></li>
+                    <li><a href="quizgame.html" class="end-buttons">Play Again</a></li><br>
+                    <li><a href="MainPage.html" class="end-buttons">Main Page</a></li>
+                    
+                </li>
+            </ul>
+        </div>
+    </div>
+  
+<a href="scoreboard.html" class="end-buttons" id="scoreboard" onclick="display()">Scoreboard</a> 
+
+<script src="quizgame.js"></script>
+<script src="userdata.js"></script>
+<script src="displayscores.js"></script>   
+</body>
+</html>
