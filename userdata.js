@@ -20,5 +20,11 @@ function storevalues(){
   existing = existing ? existing.split(',') : [];
   existing.push(endscore);
   localStorage.setItem("Score", existing.toString());
+
+  done();
 }
 
+function done(){
+  var calldone = document.getElementById("done");
+  calldone.innerHTML = 'DONE!'; 
+}
